@@ -1,4 +1,4 @@
-## This project is a part of the Python Developer track by JetBrains Academy
+## This project is a part of the Python Developer track by [JetBrains Academy](https://hyperskill.org/projects/80?track=2)
 
 ## Outcomes
 You will learn how hacking works. You will work with iterators and generators, and you’ll learn a little something about the itertools module – 
