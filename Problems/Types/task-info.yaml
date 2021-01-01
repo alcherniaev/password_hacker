@@ -8,9 +8,8 @@ files:
     # further code of the script "process_four_numbers.py"
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7988#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed. Wrong answer
-  time: Fri, 01 Jan 2021 20:55:41 UTC
+  message: <html>Correct solution</html>
+  time: Fri, 01 Jan 2021 20:59:01 UTC
 record: -1
