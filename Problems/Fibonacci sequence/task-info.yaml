@@ -2,11 +2,13 @@ type: code
 files:
 - name: main.py
   visible: true
-  text: '# put your code here'
+  text: |-
+    def fibonacci(n):
+        yield ...
   learner_created: false
-feedback_link: https://hyperskill.org/learn/step/5850#comment
+feedback_link: https://hyperskill.org/learn/step/8277#comment
 status: Solved
 feedback:
   message: <html>Correct solution</html>
-  time: Sat, 02 Jan 2021 17:32:00 UTC
+  time: Sat, 02 Jan 2021 21:05:08 UTC
 record: -1
