@@ -1,0 +1,24 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: '# put your code here'
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5850#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 11. Cannot check answer. Perhaps output format is wrong.
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    309
+    Correct output:
+    12
+
+    Your code output:
+    12
+    12
+  time: Sat, 02 Jan 2021 17:30:41 UTC
+record: -1
