@@ -18,7 +18,9 @@ def connect_server():
     my_socket.connect(address)
 
 
-# send, receive
+# reading file, send password, receive response
+# instead of brute force search i used file with most common passwords.
+# each letter of word in file i converted with lover/upper case with itertools.product
 def get_response():
     '''for i in range(1, 10):
         for password in itertools.product(char_num, repeat=i):
