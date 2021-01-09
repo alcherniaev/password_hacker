@@ -1,8 +1,8 @@
 def tracklist(**music):
     for n, a in music.items():
         print(n)
-        for i, v in n.items():
-            print("ALBUM: " + str((i)))
+        for album, track in a.items():
+            print("ALBUM: " + str(album) + " " + "TRACK: " + str(track))
 
 
 
