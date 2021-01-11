@@ -7,15 +7,8 @@ files:
         pass
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/9546#comment
-status: Failed
+status: Solved
 feedback:
-  message: "Failed test #1 of 3. Runtime error\n\nThis is a sample test from the problem\
-    \ statement!\n\nTest input:\nJackie 176\nWilson 185\nSaersha 165\nRoman 185\n\
-    Abram 169\n\n\nCorrect output:\nRoman : 185                                  \
-    \                                             \nWilson : 185\n\nYour code output:\n\
-    \n\nError:\nTraceback (most recent call last):\n  File \"jailed_code\", line 15,\
-    \ in <module>\n    tallest_people(**_heights)\n  File \"jailed_code\", line 6,\
-    \ in tallest_people\n    for key, val in dict(sorted(people.items())):\nValueError:\
-    \ too many values to unpack (expected 2)\n"
-  time: Sat, 09 Jan 2021 20:01:43 UTC
+  message: <html>Correct solution</html>
+  time: Sat, 09 Jan 2021 20:02:16 UTC
 record: -1
