@@ -219,6 +219,15 @@ files:
 
     '''
   learner_created: true
+- name: log_pas.json
+  visible: true
+  learner_created: true
+- name: hacking/mecmb.py
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/80/stages/445/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 14 Jan 2021 23:17:50 UTC
 record: -1
