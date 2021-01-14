@@ -8,3 +8,4 @@ colors = {"rainbow": ["red", "orange", "yellow", "green", "blue", "indigo", "vio
 
 with open("colors.json", 'w') as json_file:
     json.dump(colors, json_file)
+
