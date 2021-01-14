@@ -2,6 +2,7 @@ import sys
 import socket
 import string
 import itertools
+import json
 my_socket = socket.socket()
 
 
@@ -10,7 +11,7 @@ args = sys.argv
 ip_address = args[1]
 port = int(args[2])
 
-char_num = list(string.ascii_lowercase) + ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+char_num = list(string.ascii_lowercase) + list(string.digits)
 
 # connect
 def connect_server():
@@ -29,14 +30,19 @@ def get_response():
             if response.decode() == "Connection success!":
                 return "".join(password)
                 exit()'''
-    f = open('/Users/alcherniaev/PycharmProjects/Password Hacker/passwords.txt', 'r')
+    f = open('/Users/alcherniaev/Downloads/logins.txt', 'r')
+
     for line in f:
-        for password in map(lambda x: "".join(x), itertools.product(*([letter.lower(), letter.upper()] for letter in line.strip('\n')))):
-            my_socket.send(password.encode())
-            response = my_socket.recv(1024)
+        for login in map(lambda x: "".join(x), itertools.product(*([letter.lower(), letter.upper()] for letter in line.strip('\n')))):
+            password = ' '
+            json_sent = {"login": login, "password": password}
+            with open("log_pas.json", "w") as json_file:
+                json.dumps(json_sent, json_file)
+            my_socket.send(json_file.encode())
+            response = json.load(my_socket.recv(1024))
             if response.decode() == "Connection success!":
                 f.close()
-                return password
+                return login
                 exit()
 
 

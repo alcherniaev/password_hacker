@@ -219,6 +219,23 @@ files:
 
     '''
   learner_created: true
+- name: log_pas.json
+  visible: true
+  learner_created: true
+- name: hacking/mecmb.py
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/80/stages/445/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Exception in test #1
+
+    Traceback (most recent call last):
+      File "hack.py", line 50, in <module>
+        print(get_response())
+      File "hack.py", line 40, in get_response
+        json.dumps(json_sent, json_file)
+    TypeError: dumps() takes 1 positional argument but 2 were given
+  time: Thu, 14 Jan 2021 18:45:35 UTC
 record: -1
