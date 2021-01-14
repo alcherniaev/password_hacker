@@ -137,12 +137,9 @@ files:
 - name: hacking/testing.py
   visible: true
   learner_created: true
-- name: hacking/__init__.py
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/projects/80/stages/444/implement#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: Thu, 07 Jan 2021 20:06:46 UTC
-record: -1
+record: 3

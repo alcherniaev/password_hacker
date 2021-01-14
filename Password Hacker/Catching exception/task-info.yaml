@@ -203,6 +203,22 @@ files:
         test.run_tests()
         test.stop_server()
   learner_created: false
+- name: hacking/testing.py
+  visible: true
+  text: |
+    import itertools
+    f = open('/Users/alcherniaev/PycharmProjects/Password Hacker/passwords.txt', 'r')
+    for line in f:
+        for password in map(lambda x: "".join(x), itertools.product(*([letter.lower(), letter.upper()] for letter in line.strip('\n')))):
+            print(password)
+
+    f.close()
+    '''with open('/Users/alcherniaev/PycharmProjects/Password Hacker/passwords.txt') as f:
+        contents = f.read()
+        print(contents)
+
+    '''
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/80/stages/445/implement#comment
 status: Unchecked
 record: -1
