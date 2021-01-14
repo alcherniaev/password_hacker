@@ -5,9 +5,8 @@ files:
   text: '# write your code here'
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/9004#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed. Wrong answer
-  time: Mon, 11 Jan 2021 20:11:43 UTC
+  message: <html>Correct solution</html>
+  time: Mon, 11 Jan 2021 20:19:47 UTC
 record: -1
