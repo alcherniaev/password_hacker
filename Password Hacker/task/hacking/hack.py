@@ -14,6 +14,7 @@ port = int(args[2])
 char_num = list(string.ascii_lowercase) + list(string.digits)
 
 # connect
+# we need to connect only once, then send massages multiply times
 def connect_server():
     address = (ip_address, port)
     my_socket.connect(address)
