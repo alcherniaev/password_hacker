@@ -9,5 +9,8 @@ files:
     print(n // denominator)
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7187#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 14 Jan 2021 09:30:36 UTC
 record: -1
