@@ -1,0 +1,14 @@
+type: code
+custom_name: Bring a table to named tuple!
+files:
+- name: main.py
+  visible: true
+  text: from collections import namedtuple
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10019#comment
+status: Failed
+feedback:
+  message: |
+    Failed. Wrong answer
+  time: Sun, 17 Jan 2021 08:34:18 UTC
+record: -1
