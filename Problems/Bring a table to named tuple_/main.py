@@ -1,5 +1,5 @@
 from collections import namedtuple
-Student = namedtuple("student_tuple", ["name", "age", "department"])
+Student = namedtuple("Student", ["name", "age", "department"])
 
 Alina = Student(name="Alina", age="22", department="linguistics")
 Alex = Student("Alex", "25", "programming")
