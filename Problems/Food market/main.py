@@ -13,3 +13,6 @@ chain = chain.new_child(discount)
 # change value in ChainMap
 countries["USA"] = 35
 print(chain)
+
+
+
