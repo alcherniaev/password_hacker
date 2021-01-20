@@ -1,0 +1,15 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    def bounds(x):
+        ...
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10380#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 7. Wrong answer
+  time: Wed, 20 Jan 2021 07:57:13 UTC
+record: -1
