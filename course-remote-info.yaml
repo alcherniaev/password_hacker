@@ -3,7 +3,6 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/255258/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Sun, 24 Jan 2021 09:19:00 UTC
 stages:
 - id: 442
   step: 7216
@@ -194,11 +193,5 @@ topics:
   - title: Objects in Python
     theory_id: 9262
   4:
-  - title: Introduction to OOP
-    theory_id: 3614
-  - title: Class
-    theory_id: 6661
-  - title: Class instances
-    theory_id: 6669
   - title: Time module
     theory_id: 10963

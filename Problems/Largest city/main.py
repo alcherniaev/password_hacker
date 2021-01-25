@@ -1,2 +1,3 @@
 class City:
-    # define methods here
+    def __gt__(self, other):
+        pass
