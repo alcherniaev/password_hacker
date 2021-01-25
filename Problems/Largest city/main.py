@@ -1,3 +1,6 @@
 class City:
+    def __init__(self, name, population):
+        self.name = name
+        self.population = population
     def __gt__(self, other):
-        pass
+        return self.population > other.population
