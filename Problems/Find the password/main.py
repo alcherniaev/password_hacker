@@ -1,5 +1,6 @@
 from lxml import etree
 import requests
+from bs4 import BeautifulSoup
 
 def find_password(xml_string):
     root = etree.fromstring(xml_string)
