@@ -5,3 +5,6 @@ root = etree.fromstring(xml)
 
 for i in root:
     print(i.text)
+
+
+etree.dump(root)
