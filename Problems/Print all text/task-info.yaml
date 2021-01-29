@@ -5,23 +5,9 @@ files:
   text: from lxml import etree
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/9488
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed test #1 of 3. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    <root><elem1>I am elem1</elem1><elem2>I am elem2</elem2><elem3>I am elem3</elem3></root>
-    Correct output:
-    I am elem1
-    I am elem2
-    I am elem3
-
-    Your code output:
-    <Element elem1 at 0x7f3aaa1cbb08>
-    <Element elem2 at 0x7f3aaa1cbb48>
-    <Element elem3 at 0x7f3aaa1cbb88>
-  time: Thu, 28 Jan 2021 14:54:58 UTC
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/9488">JetBrains
+    Academy</a></html>
+  time: Fri, 29 Jan 2021 08:26:17 UTC
 record: -1
